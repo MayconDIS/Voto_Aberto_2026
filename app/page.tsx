@@ -619,6 +619,22 @@ export default function Home() {
             Abrir o Colinha.ai <span aria-hidden="true">↗</span>
           </a>
           <small>Serviço externo e independente. Não é o aplicativo oficial do TSE.</small>
+
+          <div className="vote-order-card" aria-label="Exemplo de colinha eleitoral na ordem da urna">
+            <div className="vote-order-card__heading">
+              <span>EXEMPLO DE COLINHA · 2026</span>
+              <strong>ORDEM DA URNA</strong>
+            </div>
+            <ol>
+              <li><span>01</span><strong>Deputado Federal</strong><small>4 dígitos</small></li>
+              <li><span>02</span><strong>Deputado Estadual</strong><small>5 dígitos</small></li>
+              <li><span>03</span><strong>Senador · 1ª vaga</strong><small>3 dígitos</small></li>
+              <li><span>04</span><strong>Senador · 2ª vaga</strong><small>3 dígitos</small></li>
+              <li><span>05</span><strong>Governador</strong><small>2 dígitos</small></li>
+              <li><span>06</span><strong>Presidente</strong><small>2 dígitos</small></li>
+            </ol>
+            <p>Preencha os nomes e números no Colinha.ai e imprima antes de ir votar.</p>
+          </div>
         </div>
       </section>
 
