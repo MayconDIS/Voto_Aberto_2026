@@ -352,21 +352,21 @@ export default function Home() {
             <span>1º turno</span>
             <strong>04 OUT</strong>
           </div>
-          <div className="candidate-tile candidate-tile--renan">
-            <div className="candidate-number">14</div>
-            <div>
-              <span>MISSÃO</span>
-              <h2>Renan<br />Santos</h2>
-              <p>Vice: Aroldo Medina</p>
-            </div>
-          </div>
-          <div className="versus" aria-hidden="true"><span>comparar</span></div>
           <div className="candidate-tile candidate-tile--flavio">
             <div className="candidate-number">22</div>
             <div>
               <span>PL</span>
               <h2>Flávio<br />Bolsonaro</h2>
               <p>Vice: Alfredo Gaspar</p>
+            </div>
+          </div>
+          <div className="versus" aria-hidden="true"><span>comparar</span></div>
+          <div className="candidate-tile candidate-tile--renan">
+            <div className="candidate-number">14</div>
+            <div>
+              <span>MISSÃO</span>
+              <h2>Renan<br />Santos</h2>
+              <p>Vice: Aroldo Medina</p>
             </div>
           </div>
           <div className="board-note">Recorte editorial entre duas candidaturas registradas</div>

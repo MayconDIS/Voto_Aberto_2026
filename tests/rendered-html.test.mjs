@@ -56,6 +56,10 @@ test("removes starter preview infrastructure", async () => {
   ]);
 
   assert.match(page, /Voto Aberto/);
+  assert.ok(
+    page.indexOf('candidate-tile--flavio') < page.indexOf('candidate-tile--renan'),
+    "Flávio Bolsonaro deve aparecer antes de Renan Santos no painel principal",
+  );
   assert.match(layout, /lang="pt-BR"/);
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
