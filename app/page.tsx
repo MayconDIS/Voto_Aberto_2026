@@ -370,6 +370,59 @@ export default function Home() {
         <div><strong>TSE</strong><span>fonte eleitoral principal</span></div>
       </section>
 
+      <section className="poll-section" aria-labelledby="poll-title">
+        <div className="poll-heading">
+          <div>
+            <span className="section-number">PESQUISA</span>
+            <p className="section-kicker">INTENÇÃO DE VOTO · 1º TURNO ESTIMULADO</p>
+          </div>
+          <div>
+            <h2 id="poll-title">Quanto cada um marca<br />na pesquisa mais recente.</h2>
+            <p>Não são votos apurados. São respostas de uma amostra nacional e podem variar dentro da margem de erro.</p>
+          </div>
+        </div>
+
+        <div className="poll-panel">
+          <div className="poll-meta">
+            <div><span>Instituto</span><strong>Quaest</strong></div>
+            <div><span>Campo</span><strong>24–27 set. 2026</strong></div>
+            <div><span>Amostra</span><strong>2.004 eleitores</strong></div>
+            <div><span>Margem</span><strong>± 2 p.p.</strong></div>
+            <div><span>Registro TSE</span><strong>BR-06520/2026</strong></div>
+          </div>
+
+          <div className="poll-results">
+            <article className="poll-result poll-result--flavio">
+              <div className="poll-result__label">
+                <div><span>22 · PL</span><h3>Flávio Bolsonaro</h3></div>
+                <strong>34<small>%</small></strong>
+              </div>
+              <div className="poll-track" aria-label="Flávio Bolsonaro: 34 por cento">
+                <span style={{ width: "34%" }} />
+              </div>
+            </article>
+
+            <article className="poll-result poll-result--renan">
+              <div className="poll-result__label">
+                <div><span>14 · MISSÃO</span><h3>Renan Santos</h3></div>
+                <strong>3<small>%</small></strong>
+              </div>
+              <div className="poll-track" aria-label="Renan Santos: 3 por cento">
+                <span style={{ width: "3%" }} />
+              </div>
+            </article>
+          </div>
+
+          <div className="poll-context">
+            <p><strong>Contexto do cenário:</strong> Lula 39% · Augusto Cury 4% · Ronaldo Caiado 4% · Romeu Zema 1% · demais candidatos 0% · brancos, nulos ou não vota 10% · indecisos 5%.</p>
+            <p>Como arredondamentos podem ocorrer, a soma publicada pode não fechar exatamente em 100%.</p>
+            <a className="text-link" href="https://www.redetv.uol.com.br/amp/redetvi-noticias/noticia/politica/quaest-lula-oscila-para-cima-e-abre-vantagem-fora-da-margem-de-erro" target="_blank" rel="noreferrer">
+              Ver resultado e metodologia <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="comparison-section" id="comparador">
         <div className="section-intro">
           <div>

@@ -34,6 +34,9 @@ test("server-renders the election comparison", async () => {
   assert.match(html, /Renan Santos/);
   assert.match(html, /Flávio Bolsonaro/);
   assert.match(html, /COMPARADOR DE PROPOSTAS/);
+  assert.match(html, /INTENÇÃO DE VOTO/);
+  assert.match(html, /Não são votos apurados/);
+  assert.match(html, /BR-06520\/2026/);
   assert.match(html, /Sem ranking/);
   assert.match(html, /plano-governo-renan-santos-2026\.pdf/);
   assert.match(html, /plano-governo-flavio-bolsonaro-2026\.pdf/);
