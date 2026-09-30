@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type CandidateProposal = {
   pages: string;
@@ -299,7 +299,16 @@ function ProposalCard({
 
 export default function Home() {
   const [activeTopic, setActiveTopic] = useState(topics[0].id);
+  const [showBackToTop, setShowBackToTop] = useState(false);
   const selectedTopic = topics.find((topic) => topic.id === activeTopic) ?? topics[0];
+
+  useEffect(() => {
+    const updateBackToTop = () => setShowBackToTop(window.scrollY > 520);
+
+    updateBackToTop();
+    window.addEventListener("scroll", updateBackToTop, { passive: true });
+    return () => window.removeEventListener("scroll", updateBackToTop);
+  }, []);
 
   return (
     <main>
@@ -620,6 +629,17 @@ export default function Home() {
         <p>Informação para decidir. Nenhuma recomendação de voto.</p>
         <p>Atualizado em 30 de setembro de 2026.</p>
       </footer>
+
+      <a
+        className={`back-to-top${showBackToTop ? " is-visible" : ""}`}
+        href="#top"
+        aria-label="Voltar ao topo da página"
+        aria-hidden={!showBackToTop}
+        tabIndex={showBackToTop ? 0 : -1}
+      >
+        <span className="back-to-top__label">Topo</span>
+        <span className="back-to-top__arrow" aria-hidden="true">↑</span>
+      </a>
     </main>
   );
 }
