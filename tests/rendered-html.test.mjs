@@ -40,6 +40,8 @@ test("server-renders the election comparison", async () => {
   assert.match(html, /Datafolha/);
   assert.match(html, /BR-04029\/2026/);
   assert.match(html, /Voltar ao topo da página/);
+  assert.match(html, /Abrir o Colinha\.ai/);
+  assert.match(html, /https:\/\/colinha\.ai\//);
   assert.match(html, /Sem ranking/);
   assert.match(html, /plano-governo-renan-santos-2026\.pdf/);
   assert.match(html, /plano-governo-flavio-bolsonaro-2026\.pdf/);

@@ -321,6 +321,7 @@ export default function Home() {
           <a href="#comparador">Comparador</a>
           <a href="#trajetorias">Trajetórias</a>
           <a href="#metodologia">Metodologia</a>
+          <a href="#colinha">Colinha</a>
         </nav>
         <a className="header-source" href={officialPlansUrl} target="_blank" rel="noreferrer">
           Fonte TSE <span aria-hidden="true">↗</span>
@@ -603,6 +604,21 @@ export default function Home() {
           <div><span>03</span><p><strong>Promessa não é resultado</strong>O site descreve o que foi proposto, sem afirmar que é viável ou será cumprido.</p></div>
           <div><span>04</span><p><strong>Sem pontuação oculta</strong>Não há nota, ranking, perfil ideológico calculado nem recomendação de voto.</p></div>
           <div><span>05</span><p><strong>Direito de correção</strong>Datas e status devem ser revistos quando as fontes oficiais mudarem.</p></div>
+        </div>
+      </section>
+
+      <section className="colinha-section" id="colinha" aria-labelledby="colinha-title">
+        <div>
+          <span className="section-number">05</span>
+          <p className="section-kicker">COLINHA ELEITORAL</p>
+        </div>
+        <div className="colinha-content">
+          <h2 id="colinha-title">Leve seus candidatos<br />na ordem da urna.</h2>
+          <p>No Colinha.ai você escolhe um candidato para cada cargo, confere nome, número e partido e imprime uma lista para levar no dia da votação. Segundo o serviço, a seleção fica salva somente no seu aparelho, sem conta ou cadastro.</p>
+          <a className="button button--primary colinha-cta" href="https://colinha.ai/" target="_blank" rel="noreferrer">
+            Abrir o Colinha.ai <span aria-hidden="true">↗</span>
+          </a>
+          <small>Serviço externo e independente. Não é o aplicativo oficial do TSE.</small>
         </div>
       </section>
 
