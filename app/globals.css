@@ -448,6 +448,11 @@ main {
   max-width: 600px;
 }
 
+.poll-panels {
+  display: grid;
+  gap: 34px;
+}
+
 .poll-panel {
   background: var(--white);
   border: 1px solid var(--line);

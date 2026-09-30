@@ -377,12 +377,13 @@ export default function Home() {
             <p className="section-kicker">INTENÇÃO DE VOTO · 1º TURNO ESTIMULADO</p>
           </div>
           <div>
-            <h2 id="poll-title">Quanto cada um marca<br />na pesquisa mais recente.</h2>
-            <p>Não são votos apurados. São respostas de uma amostra nacional e podem variar dentro da margem de erro.</p>
+            <h2 id="poll-title">O que mostram as pesquisas<br />nacionais mais recentes.</h2>
+            <p>Não são votos apurados. Cada painel representa uma pesquisa, com período de campo, amostra e metodologia próprios.</p>
           </div>
         </div>
 
-        <div className="poll-panel">
+        <div className="poll-panels">
+          <div className="poll-panel">
           <div className="poll-meta">
             <div><span>Instituto</span><strong>Quaest</strong></div>
             <div><span>Campo</span><strong>24–27 set. 2026</strong></div>
@@ -417,8 +418,49 @@ export default function Home() {
             <p><strong>Contexto do cenário:</strong> Lula 39% · Augusto Cury 4% · Ronaldo Caiado 4% · Romeu Zema 1% · demais candidatos 0% · brancos, nulos ou não vota 10% · indecisos 5%.</p>
             <p>Como arredondamentos podem ocorrer, a soma publicada pode não fechar exatamente em 100%.</p>
             <a className="text-link" href="https://www.redetv.uol.com.br/amp/redetvi-noticias/noticia/politica/quaest-lula-oscila-para-cima-e-abre-vantagem-fora-da-margem-de-erro" target="_blank" rel="noreferrer">
-              Ver resultado e metodologia <span aria-hidden="true">↗</span>
+              Fonte Quaest <span aria-hidden="true">↗</span>
             </a>
+          </div>
+          </div>
+
+          <div className="poll-panel">
+            <div className="poll-meta">
+              <div><span>Instituto</span><strong>Datafolha</strong></div>
+              <div><span>Campo</span><strong>15–17 set. 2026</strong></div>
+              <div><span>Amostra</span><strong>2.001 eleitores</strong></div>
+              <div><span>Margem</span><strong>± 2 p.p.</strong></div>
+              <div><span>Registro TSE</span><strong>BR-04029/2026</strong></div>
+            </div>
+
+            <div className="poll-results">
+              <article className="poll-result poll-result--flavio">
+                <div className="poll-result__label">
+                  <div><span>22 · PL</span><h3>Flávio Bolsonaro</h3></div>
+                  <strong>36<small>%</small></strong>
+                </div>
+                <div className="poll-track" aria-label="Flávio Bolsonaro: 36 por cento">
+                  <span style={{ width: "36%" }} />
+                </div>
+              </article>
+
+              <article className="poll-result poll-result--renan">
+                <div className="poll-result__label">
+                  <div><span>14 · MISSÃO</span><h3>Renan Santos</h3></div>
+                  <strong>3<small>%</small></strong>
+                </div>
+                <div className="poll-track" aria-label="Renan Santos: 3 por cento">
+                  <span style={{ width: "3%" }} />
+                </div>
+              </article>
+            </div>
+
+            <div className="poll-context">
+              <p><strong>Contexto do cenário:</strong> Lula 39% · Augusto Cury 6% · Ronaldo Caiado 4% · Romeu Zema 2% · Samara 1% · Rui Costa Pimenta 1% · demais abaixo de 1% · brancos ou nulos 6% · indecisos 3%.</p>
+              <p>Entrevistas presenciais em 125 municípios, com eleitores de 16 anos ou mais; nível de confiança de 95%.</p>
+              <a className="text-link" href="https://datafolha.folha.uol.com.br/eleicoes/2026/09/lula-pt-e-flavio-bolsonaro-pl-empatam-no-1o-e-2o-turnos.shtml" target="_blank" rel="noreferrer">
+                Fonte Datafolha <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
