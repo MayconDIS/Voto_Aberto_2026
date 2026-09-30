@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "Voto Aberto 2026 | Renan Santos x Flávio Bolsonaro",
   description:
     "Compare os planos de governo de Renan Santos e Flávio Bolsonaro por tema, com páginas e fontes oficiais.",
+  icons: {
+    icon: [{ url: "/favicon.svg?v=2", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg?v=2",
+  },
   openGraph: {
     title: "Voto Aberto 2026",
     description:
